@@ -418,7 +418,7 @@ li {
    ============================================ */
 
 .viewer-section {
-    max-width: 2000px;
+    max-width: none;
     margin: 0 auto;
     width: 100%;
     overflow: hidden;
@@ -428,7 +428,7 @@ li {
     width: 100% !important;
     height: 85vh !important;
     min-height: 800px !important;
-    max-width: 2000px !important;
+    max-width: none !important;
     position: relative !important;
     z-index: 1 !important;
     margin: var(--spacing-lg) 0 !important;
