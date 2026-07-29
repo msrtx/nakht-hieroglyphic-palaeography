@@ -407,3 +407,41 @@ li {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
 }
+/* ============================================
+   MIRADOR OVERRIDE - Force viewer to stay in container
+   ============================================ */
+
+.viewer-section {
+    max-width: 720px;
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+#mirador-viewer {
+    width: 100% !important;
+    height: 60vh !important;
+    min-height: 500px !important;
+    max-width: 720px !important;
+    position: relative !important;
+    z-index: 1 !important;
+    margin: var(--spacing-lg) 0 !important;
+    border: 1px solid var(--border-light) !important;
+    overflow: hidden !important;
+}
+
+/* Force Mirador internal elements to respect container */
+#mirador-viewer > div {
+    width: 100% !important;
+    height: 100% !important;
+    position: relative !important;
+}
+
+/* Prevent Mirador from using fixed/absolute positioning that breaks layout */
+.mirador-viewer {
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+}
