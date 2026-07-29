@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project & Credits | Book of the Dead of Nakht</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="fade-in">
+    <header class="site-header">
+        <div class="nav-container">
+            <a href="index.html" class="site-branding">Book of the Dead of Nakht</a>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+            <nav><ul class="main-nav" id="mainNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="nakht.html">About Nakht</a></li>
+                <li><a href="palaeography.html">Palaeography</a></li>
+                <li><a href="culture.html">Visual Culture</a></li>
+                <li><a href="project.html" class="active">Project</a></li>
+            </ul></nav>
+        </div>
+    </header>
+    <main class="page-content">
+        <article class="article-content">
+            <h1>Project Description and Credits</h1>
+            
+            <h2>About This Digital Edition</h2>
+            <p>This website presents a scholarly digital edition of BM EA 10473,1, combining high-resolution imagery with detailed palaeographic analysis. The project utilises IIIF standards for interoperability and Mirador 3 for interactive viewing.</p>
+            
+            <h2>Technology</h2>
+            <ul>
+                <li><strong>IIIF Manifest:</strong> Custom-built annotation-rich manifest with hieroglyphic sign data</li>
+                <li><strong>Viewer:</strong> Mirador 3 (open-source IIIF viewer)</li>
+                <li><strong>Annotations:</strong> OA-compatible annotations with Gardiner sign classifications</li>
+                <li><strong>Hosting:</strong> GitHub Pages</li>
+            </ul>
+            
+            <h2>How to Cite</h2>
+            <div class="highlight-box">
+                [Your Name] (2026). <em>The Book of the Dead of Nakht: A Digital Edition</em>. BM EA 10473,1. Available at: https://YOURUSERNAME.github.io/book-of-dead-nakht/
+            </div>
+            
+            <h2>Credits</h2>
+            <table>
+                <tr><th>Role</th><th>Name / Institution</th></tr>
+                <tr><td>Imaging</td><td>Marina Sartori</td></tr>
+                <tr><td>Image Source</td><td>Trustees of the British Museum</td></tr>
+                <tr><td>License</td><td>Creative Commons BY 3.0</td></tr>
+                <tr><td>IIIF Manifest</td><td>[Your Name]</td></tr>
+                <tr><td>Website Design</td><td>[Your Name]</td></tr>
+            </table>
+            
+            <h2>Acknowledgements</h2>
+            <p>This project was made possible through open-access imagery provided by the British Museum. The digital edition follows IIIF standards for interoperability in cultural heritage materials.</p>
+            
+            <div class="quote-block">
+                Powered by IIIF and Mirador 3.<br>
+                Website design inspired by Japanese digital humanities scholarship.
+            </div>
+        </article>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Digital Humanities Project</p>
+            <p>British Museum Collection | CC BY 3.0</p>
+        </div>
+    </footer>
+    <script>function toggleMenu(){document.getElementById('mainNav').classList.toggle('open')}</script>
+</body>
+</html>
