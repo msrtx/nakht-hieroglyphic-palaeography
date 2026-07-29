@@ -54,6 +54,16 @@ body {
     top: 0;
     z-index: 1000;
 }
+/* Prevent header from overlapping viewer content */
+#mirador-viewer {
+    margin-top: calc(var(--spacing-xl) * -1);
+    padding-top: var(--spacing-xl);
+}
+
+/* Ensure proper spacing below viewer */
+.view-caption {
+    margin-bottom: var(--spacing-xl);
+}
 
 .nav-container {
     max-width: var(--container-width);
@@ -357,15 +367,31 @@ li {
     }
     
     #mirador-viewer {
-        height: 60vh;
-        min-height: 400px;
+    height: 70vh;
+    min-height: 600px;
+    border: 1px solid var(--border-light);
+    background: white;
+    margin: var(--spacing-lg) 0;
+    position: relative;
+    z-index: 1;
+}
+
+.viewer-section {
+    padding-top: var(--spacing-lg);
+    padding-bottom: var(--spacing-xl);
+}
     }
     
     h1 { font-size: 1.8rem; }
     h2 { font-size: 1.4rem; }
     
-    .page-content {
-        padding: 0 var(--spacing-sm);
+   .page-content {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-lg);
+    padding-top: var(--spacing-xl);
+    padding-bottom: var(--spacing-xl);
+}
     }
 }
 
