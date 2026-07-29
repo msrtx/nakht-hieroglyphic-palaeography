@@ -3,267 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Book of the Dead of Nakht (BM EA 10473)</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500&display=swap" rel="stylesheet">
+    <title>The Book of the Dead of Nakht | BM EA 10473</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://unpkg.com/mirador@3/dist/mirador.min.js"></script>
 </head>
-<body>
-    <!-- Header with Hamburger Menu -->
+<body class="fade-in">
+    
     <header class="site-header">
-        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <h1 class="site-title">The Book of the Dead of Nakht (BM EA 10473)</h1>
+        <div class="nav-container">
+            <a href="index.html" class="site-branding">Book of the Dead of Nakht</a>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <nav>
+                <ul class="main-nav" id="mainNav">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="nakht.html">About Nakht</a></li>
+                    <li><a href="palaeography.html">Palaeography</a></li>
+                    <li><a href="culture.html">Visual Culture</a></li>
+                    <li><a href="project.html">Project</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- Collapsible Navigation Panel -->
-    <nav class="collapsible-nav" id="collapsibleNav">
-        
-        <!-- Section 1: The Book of the Dead of Nakht -->
-        <details class="nav-section" open>
-            <summary class="nav-summary">
-                + The Book of the Dead of Nakht (BM EA 10473)
-            </summary>
-            <ul class="sub-nav">
-                <li><a href="#dating-provenance">Dating and provenance</a></li>
-                <li><a href="#description-materiality">Description and Materiality</a></li>
-                <li><a href="#graphic-registers">Graphic registers</a></li>
-            </ul>
-        </details>
-
-        <!-- Section 2: Palaeography -->
-        <details class="nav-section">
-            <summary class="nav-summary">
-                + Palaeography
-            </summary>
-            <ul class="sub-nav">
-                <li><a href="#hieroglyphic-signs">List of hieroglyphic signs</a></li>
-                <li><a href="#parallels">Parallels</a></li>
-                <li><a href="#stroke-order">Stroke order</a></li>
-            </ul>
-        </details>
-
-        <!-- Section 3: Visual and written culture -->
-        <details class="nav-section">
-            <summary class="nav-summary">
-                + Visual and written culture
-            </summary>
-            <ul class="sub-nav">
-                <li><a href="#scribes-artists">Scribes and artists</a></li>
-                <li><a href="#cursive-monumental">Cursive vs. Monumental context</a></li>
-            </ul>
-        </details>
-
-    </nav>
-
-    <!-- Main Content Area -->
-    <main class="content-area">
-        
-        <!-- Mirador Viewer Section -->
-        <section id="viewer-section" class="content-section">
-            <h2>Manuscript Viewer</h2>
-            <div id="mirador-viewer"></div>
-            <p class="view-caption">Zoom, pan, and explore the full manuscript (BM EA 10473,1)</p>
-        </section>
-
-        <!-- Dating and Provenance -->
-        <section id="dating-provenance" class="content-section">
-            <h2>Dating and provenance</h2>
-            <p>This funerary manuscript was created for <strong>Nakht</strong>, royal scribe and military commander during the Late Eighteenth Dynasty (~1350 BCE), Thebes.</p>
+    <main class="page-content">
+        <article class="article-content">
+            <h1>The Book of the Dead of Nakht</h1>
+            <p class="quote-block">BM EA 10473,1 | Late Eighteenth Dynasty, Thebes</p>
             
-            <h3>Dating Evidence</h3>
-            <p>Palaeographic analysis places this manuscript in the Late Eighteenth Dynasty (c. 1390–1352 BCE), based on handwriting style consistent with Tell el-Amarna period manuscripts.</p>
+            <section class="viewer-section">
+                <h2>Manuscript Viewer</h2>
+                <div id="mirador-viewer"></div>
+                <p class="view-caption">Interactive IIIF viewer — zoom, pan, and explore the complete manuscript</p>
+            </section>
             
-            <h3>Collection History</h3>
-            <table>
-                <tr>
-                    <th>Period</th>
-                    <th>Location/Owner</th>
-                </tr>
-                <tr>
-                    <td>Late 18th Dynasty (c. 1350 BCE)</td>
-                    <td>Thebes, Egypt (original burial)</td>
-                </tr>
-                <tr>
-                    <td>19th Century CE</td>
-                    <td>Private European collection</td>
-                </tr>
-                <tr>
-                    <td>1890s</td>
-                    <td>British Museum acquisition (EA 10473,1)</td>
-                </tr>
-            </table>
-        </section>
-
-        <!-- Description and Materiality -->
-        <section id="description-materiality" class="content-section">
-            <h2>Description and Materiality</h2>
+            <h3>Introduction</h3>
+            <p>This digital edition presents <strong>BMI EA 10473,1</strong>, a beautifully preserved Book of the Dead belonging to Nakht, royal scribe and military commander of the Late Eighteenth Dynasty (~1350 BCE).</p>
             
-            <h3>Physical Description</h3>
-            <table>
-                <tr>
-                    <th>Attribute</th>
-                    <th>Description</th>
-                </tr>
-                <tr>
-                    <td>Material</td>
-                    <td>Papyrus scroll</td>
-                </tr>
-                <tr>
-                    <td>Digital dimensions</td>
-                    <td>5746 × 10000 pixels</td>
-                </tr>
-                <tr>
-                    <td>Ink pigments</td>
-                    <td>Black, red, blue, yellow</td>
-                </tr>
-                <tr>
-                    <td>Condition</td>
-                    <td>Well-preserved, minor lacunae</td>
-                </tr>
-            </table>
-            
-            <h3>Ink Composition</h3>
+            <p>Through this site, you can explore:</p>
             <ul>
-                <li><strong>Black:</strong> Carbon black (soot or lampblack)</li>
-                <li><strong>Red:</strong> Red ochre (iron oxide)</li>
-                <li><strong>Blue:</strong> Egyptian blue (calcium copper silicate)</li>
-                <li><strong>Yellow:</strong> Yellow ochre or orpiment</li>
+                <li><a href="nakht.html">Historical context</a> — Dating, provenance, and physical description</li>
+                <li><a href="palaeography.html">Palaeographic analysis</a> — Hieroglyphic signs and colour usage</li>
+                <li><a href="culture.html">Cultural significance</a> — Scribes, artists, and script traditions</li>
             </ul>
-        </section>
-
-        <!-- Graphic Registers -->
-        <section id="graphic-registers" class="content-section">
-            <h2>Graphic registers</h2>
-            <p>The manuscript is organized into vertical registers (columns) with clear spacing between sections. Each register contains hieroglyphic signs arranged right-to-left, following standard Egyptian convention.</p>
-            <p>The layout demonstrates careful planning with larger hieroglyphs for divine names and standardized spacing for regular passages.</p>
-        </section>
-
-        <!-- List of Hieroglyphic Signs -->
-        <section id="hieroglyphic-signs" class="content-section">
-            <h2>List of hieroglyphic signs</h2>
-            <p>Detailed breakdown using Gardiner's classification system:</p>
             
-            <table>
-                <tr>
-                    <th>Gardiner Code</th>
-                    <th>Reading</th>
-                    <th>Subject</th>
-                    <th>Colours</th>
-                </tr>
-                <tr>
-                    <td><strong>N1</strong></td>
-                    <td><em>p.t</em></td>
-                    <td>Sky</td>
-                    <td>Blue (fill; no outline)</td>
-                </tr>
-                <tr>
-                    <td><strong>A40</strong></td>
-                    <td>silent</td>
-                    <td>Seated god</td>
-                    <td>Black/blue/red</td>
-                </tr>
-                <tr>
-                    <td><strong>E34</strong></td>
-                    <td><em>wn</em></td>
-                    <td>Hare</td>
-                    <td>Black/yellow</td>
-                </tr>
-                <tr>
-                    <td><strong>X1</strong></td>
-                    <td><em>t</em></td>
-                    <td>Bread</td>
-                    <td>Blue (fill)</td>
-                </tr>
-                <tr>
-                    <td><strong>R7</strong></td>
-                    <td><em>nṯr</em></td>
-                    <td>God</td>
-                    <td>Red/yellow</td>
-                </tr>
-                <tr>
-                    <td><strong>M17</strong></td>
-                    <td><em>y</em></td>
-                    <td>Reed</td>
-                    <td>Red/yellow</td>
-                </tr>
-                <tr>
-                    <td><strong>V30</strong></td>
-                    <td><em>nb</em></td>
-                    <td>Basket</td>
-                    <td>Red/yellow</td>
-                </tr>
-            </table>
-        </section>
-
-        <!-- Parallels -->
-        <section id="parallels" class="content-section">
-            <h2>Parallels</h2>
-            <p>These signs appear consistently across Late 18th Dynasty funerary texts, particularly in:</p>
-            <ul>
-                <li><strong>BD Qenna</strong> – Comparable stylistic treatment</li>
-                <li><strong>BD Yuya</strong> – Similar colour palette</li>
-                <li><strong>TT181</strong> – Matching hieroglyphic forms</li>
-                <li><strong>TT69</strong> – Related compositional elements</li>
-            </ul>
-        </section>
-
-        <!-- Stroke Order -->
-        <section id="stroke-order" class="content-section">
-            <h2>Stroke order</h2>
-            <p>Egyptian hieroglyphic writing follows specific conventions for stroke execution and sign construction. Scribes were trained to produce consistent forms using particular brush or reed pen techniques.</p>
-            <p>Observations from this manuscript indicate careful execution with attention to proportional balance within each sign.</p>
-        </section>
-
-        <!-- Scribes and Artists -->
-        <section id="scribes-artists" class="content-section">
-            <h2>Scribes and artists</h2>
-            <p>The creation of funerary manuscripts involved specialised artisans. Nakht himself held the title of <em>royal scribe and military commander</em>, indicating elite status and likely access to skilled workshop personnel.</p>
-            <p>The quality of execution suggests training under master scribes familiar with canonical forms.</p>
-        </section>
-
-        <!-- Cursive vs. Monumental -->
-        <section id="cursive-monumental" class="content-section">
-            <h2>Cursive vs. Monumental context</h2>
-            <p>Egyptian writing systems employed different script styles depending on context:</p>
-            
-            <table>
-                <tr>
-                    <th>Context</th>
-                    <th>Characteristics</th>
-                </tr>
-                <tr>
-                    <td><strong>Cursive (Papyrus)</strong></td>
-                    <td>Faster execution, simplified forms, adapted to brush/reed pen on flexible surface</td>
-                </tr>
-                <tr>
-                    <td><strong>Monumental (Stone)</strong></td>
-                    <td>Carefully carved, formalised proportions, often painted, intended for permanence</td>
-                </tr>
-            </table>
-            <p>This papyrus represents the cursive tradition while maintaining fidelity to monumental standards.</p>
-        </section>
-
+            <div class="highlight-box">
+                <strong>Digital Edition</strong> — High-resolution imagery courtesy of Marina Sartori and the Trustees of the British Museum (CC BY 3.0). Powered by IIIF and Mirador 3.
+            </div>
+        </article>
     </main>
 
-    <footer>
-        <p>© 2026 | British Museum Collection | CC BY 3.0</p>
-        <p>Photo: Marina Sartori | Courtesy of the Trustees of the British Museum</p>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Digital Humanities Project</p>
+            <p>British Museum Collection | CC BY 3.0</p>
+            <div class="credits">
+                Photo: Marina Sartori | Courtesy of the Trustees of the British Museum<br>
+                IIIF Manifest by [Your Name] | Mirador 3 Viewer
+            </div>
+        </div>
     </footer>
 
-    <!-- Load Mirador Viewer -->
     <script>
+        // Mobile menu toggle
+        function toggleMenu() {
+            document.getElementById('mainNav').classList.toggle('open');
+        }
+        
+        // Load Mirador viewer
         window.onload = function() {
             Mirador.viewer({
                 id: 'mirador-viewer',
                 windows: [{
-                    manifestId: 'https://raw.githubusercontent.com/msrtx/nakht-hieroglyphic-palaeography/refs/heads/main/manifests/BD_Nakht_a3.json'
+                    manifestId: 'https://dev.gdmrdigital.com/manifests/1245635613/173444440/5a28bdfa562db8b62d9c0707563ae1e0.json'
                 }],
-                workspace: {
-                    type: 'single'
+                workspace: { type: 'single' },
+                theme: {
+                    palette: {
+                        Primary: { main: '#3b4d61' }
+                    }
                 }
             });
         };
