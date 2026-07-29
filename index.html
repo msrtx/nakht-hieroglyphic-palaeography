@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book of the Dead of Nakht | BM EA 10473,1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Lato:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://unpkg.com/mirador@3/dist/mirador.min.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <nav>
+            <a href="index.html" class="logo">Book of the Dead of Nakht</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Viewer</a></li>
+                <li><a href="provenance.html">Provenance</a></li>
+                <li><a href="palaeography.html">Palaeography</a></li>
+                <li><a href="materiality.html">Materiality</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="viewer-container">
+            <div id="mirador-viewer"></div>
+        </section>
+        
+        <aside class="sidebar">
+            <h2>Hieroglyph Annotations</h2>
+            <div class="annotation-list">
+                <div class="hieroglyph-item" data-canvas="N1">
+                    <strong>N1</strong> – Sky (p.t)<br>
+                    <small>Blue fill</small>
+                </div>
+                <div class="hieroglyph-item" data-canvas="A40">
+                    <strong>A40</strong> – Seated god<br>
+                    <small>Black/blue/red</small>
+                </div>
+                <div class="hieroglyph-item" data-canvas="E34">
+                    <strong>E34</strong> – Hare (wn)<br>
+                    <small>Black/yellow</small>
+                </div>
+                <div class="hieroglyph-item" data-canvas="X1">
+                    <strong>X1</strong> – Bread (t)<br>
+                    <small>Blue fill</small>
+                </div>
+                <div class="hieroglyph-item" data-canvas="R7">
+                    <strong>R7</strong> – God (nṯr)<br>
+                    <small>Red/yellow</small>
+                </div>
+                <div class="hieroglyph-item" data-canvas="M17">
+                    <strong>M17</strong> – Reed (y)<br>
+                    <small>Red/yellow</small>
+                </div>
+                <div class="hieroglyph-item" data-canvas="V30">
+                    <strong>V30</strong> – Basket (nb)<br>
+                    <small>Red/yellow</small>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <p>© 2026 | British Museum Collection | CC BY 3.0</p>
+        <p>Photo: Marina Sartori | Courtesy of the Trustees of the British Museum</p>
+    </footer>
+
+    <script>
+        // Load Mirador viewer
+        window.onload = function() {
+            Mirador.viewer({
+                id: 'mirador-viewer',
+                windows: [{
+                    manifestId: 'manifests/BD_Nakht_a.json'
+                }],
+                workspace: {
+                    type: 'single'
+                }
+            });
+        };
+    </script>
+</body>
+</html>
