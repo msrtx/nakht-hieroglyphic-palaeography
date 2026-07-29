@@ -75,20 +75,32 @@
         }
         
         // Load Mirador viewer
-        window.onload = function() {
-            Mirador.viewer({
-                id: 'mirador-viewer',
-                windows: [{
-                    manifestId: 'https://dev.gdmrdigital.com/manifests/1245635613/173444440/5a28bdfa562db8b62d9c0707563ae1e0.json'
-                }],
-                workspace: { type: 'single' },
-                theme: {
-                    palette: {
-                        Primary: { main: '#3b4d61' }
-                    }
-                }
-            });
-        };
+       window.onload = function() {
+    // Ensure viewer container exists before initializing
+    const viewerContainer = document.getElementById('mirador-viewer');
+    
+    if (viewerContainer) {
+        viewerContainer.style.position = 'relative';
+        viewerContainer.style.zIndex = '1';
+        
+        Mirador.viewer({
+            id: 'mirador-viewer',
+            windows: [{
+                manifestId: 'https://dev.gdmrdigital.com/manifests/1245635613/173444440/5a28bdfa562db8b62d9c0707563ae1e0.json',
+                thumbnailNavigationPosition: 'far-bottom'
+            }],
+            workspace: {
+                type: 'single'
+            },
+            window: {
+                allowClose: true,
+                allowFullscreen: true,
+                allowRotate: true,
+                showCanvasNames: true
+            }
+        });
+    }
+};
     </script>
 </body>
 </html>
