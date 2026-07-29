@@ -152,8 +152,14 @@ body {
 }
 
 .article-content {
-    max-width: var(--max-width);
+    max-width: 720px;
     margin: 0 auto;
+}
+
+/* Allow viewer section to be full width within article */
+.article-content .viewer-section {
+    max-width: 100%;
+}
 }
 
 /* ============================================
