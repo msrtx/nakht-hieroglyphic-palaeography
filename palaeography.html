@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palaeography | Book of the Dead of Nakht</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="fade-in">
+    <header class="site-header">
+        <div class="nav-container">
+            <a href="index.html" class="site-branding">Book of the Dead of Nakht</a>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+            <nav><ul class="main-nav" id="mainNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="nakht.html">About Nakht</a></li>
+                <li><a href="palaeography.html" class="active">Palaeography</a></li>
+                <li><a href="culture.html">Visual Culture</a></li>
+                <li><a href="project.html">Project</a></li>
+            </ul></nav>
+        </div>
+    </header>
+    <main class="page-content">
+        <article class="article-content">
+            <h1>Palaeography</h1>
+            <p>Detailed analysis of hieroglyphic signs using Gardiner's classification system. Each sign is annotated with its phonetic value, semantic role, and colour usage.</p>
+            
+            <h2>List of Hieroglyphic Signs</h2>
+            <table>
+                <tr><th>Gardiner Code</th><th>Reading</th><th>Subject</th><th>Colours</th><th>Canvas Coordinates</th></tr>
+                <tr><td><strong>N1</strong></td><td><em>p.t</em></td><td>Sky</td><td>Blue (fill; no outline)</td><td>xywh=2133,1724,315,95</td></tr>
+                <tr><td><strong>A40</strong></td><td>silent (determinative)</td><td>Seated god</td><td>Black (partial outline); blue, red (fills)</td><td>xywh=2456,2107,196,255</td></tr>
+                <tr><td><strong>E34</strong></td><td><em>wn</em></td><td>Hare</td><td>Black (outline, inner details); yellow (fill)</td><td>xywh=4462,1749,349,156</td></tr>
+                <tr><td><strong>X1</strong></td><td><em>t</em></td><td>Bread</td><td>Blue (fill)</td><td>xywh=2143,1624,152,97</td></tr>
+                <tr><td><strong>R7</strong></td><td><em>nṯr</em></td><td>God / Divine</td><td>Red (outline, inner details); yellow (fill)</td><td>xywh=6593,1129,160,255</td></tr>
+                <tr><td><strong>M17</strong></td><td><em>y (/i)</em></td><td>Reed</td><td>Red (outlines, inner details); yellow (fill)</td><td>xywh=6716,653,187,272</td></tr>
+                <tr><td><strong>V30</strong></td><td><em>nb</em></td><td>Basket</td><td>Red (outline, inner details); yellow (fill)</td><td>xywh=6926,681,310,122</td></tr>
+            </table>
+            
+            <h2>Colour Conventions</h2>
+            <table>
+                <tr><th>Colour</th><th>Usage</th><th>Symbolic Meaning</th></tr>
+                <tr><td>Blue</td><td>Sky, divine elements, bread offerings</td><td>Cosmos, fertility, rebirth</td></tr>
+                <tr><td>Red</td><td>Divine signs, determinatives</td><td>Power, danger, divinity</td></tr>
+                <tr><td>Yellow</td><td>Godly flesh, baskets, reeds</td><td>Gold, eternity, sacred objects</td></tr>
+                <tr><td>Black</td><td>Outlines, interior details</td><td>Fertility, regeneration, Osiris</td></tr>
+            </table>
+            
+            <h2>Parallels</h2>
+            <p>These signs appear consistently across Late 18th Dynasty funerary texts, particularly in:</p>
+            <ul>
+                <li><strong>BD Qenna</strong> — Comparable stylistic treatment</li>
+                <li><strong>BD Yuya</strong> — Similar colour palette</li>
+                <li><strong>TT181</strong> — Matching hieroglyphic forms</li>
+                <li><strong>TT69</strong> — Related compositional elements</li>
+            </ul>
+            
+            <h2>Stroke Order</h2>
+            <p>Egyptian hieroglyphic writing follows specific conventions for stroke execution and sign construction. Scribes were trained to produce consistent forms using particular brush or reed pen techniques. Observations from this manuscript indicate careful execution with attention to proportional balance within each sign.</p>
+        </article>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Digital Humanities Project</p>
+            <p>British Museum Collection | CC BY 3.0</p>
+        </div>
+    </footer>
+    <script>function toggleMenu(){document.getElementById('mainNav').classList.toggle('open')}</script>
+</body>
+</html>
