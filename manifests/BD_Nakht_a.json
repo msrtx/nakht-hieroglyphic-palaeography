@@ -1,6 +1,6 @@
 {
   "@context": "http://iiif.io/api/presentation/2/context.json",
-  "@id": "https://msrtx.github.io/BD_Nakht_a/manifests/BD_Nakht_a.json",
+  "@id": "https://msrtx.github.io/BD_Nakht_a/manifests/BD_Nakht_a3.json",
   "@type": "sc:Manifest",
   "label": "Book of the Dead of Nakht, BM EA 10473,1",
   "description": [
@@ -47,7 +47,7 @@
             {
               "within": {
                 "@type": "sc:Manifest",
-                "@id": "https://msrtx.github.io/BD_Nakht_a/manifests/BD_Nakht_a.json"
+                "@id": "https://msrtx.github.io/BD_Nakht_a/manifests/BD_Nakht_a3.json"
               },
               "@type": "oa:SpecificResource",
               "selector": {
@@ -105,7 +105,7 @@
             {
               "within": {
                 "@type": "sc:Manifest",
-                "@id": "https://msrtx.github.io/BD_Nakht_a/manifests/BD_Nakht_a.json"
+                "@id": "https://msrtx.github.io/BD_Nakht_a/manifests/BD_Nakht_a3.json"
               },
               "@type": "oa:SpecificResource",
               "selector": {
@@ -158,7 +158,7 @@
             {
               "within": {
                 "@type": "sc:Manifest",
-                "@id": "https://msrtx.github.io/BD_Nakht_a/manifests/BD_Nakht_a.json"
+                "@id": "https://msrtx.github.io/BD_Nakht_a/manifests/BD_Nakht_a3.json"
               },
               "@type": "oa:SpecificResource",
               "selector": {
@@ -206,7 +206,7 @@
             {
               "within": {
                 "@type": "sc:Manifest",
-                "@id": "https://msrtx.github.io/BD_Nakht_a/manifests/BD_Nakht_a.json"
+                "@id": "https://msrtx.github.io/BD_Nakht_a/manifests/BD_Nakht_a3.json"
               },
               "@type": "oa:SpecificResource",
               "selector": {
@@ -269,7 +269,7 @@
             {
               "within": {
                 "@type": "sc:Manifest",
-                "@id": "https://msrtx.github.io/BD_Nakht_a/manifests/BD_Nakht_a.json"
+                "@id": "https://msrtx.github.io/BD_Nakht_a/manifests/BD_Nakht_a3.json"
               },
               "@type": "oa:SpecificResource",
               "selector": {
@@ -322,7 +322,7 @@
             {
               "within": {
                 "@type": "sc:Manifest",
-                "@id": "https://msrtx.github.io/BD_Nakht_a/manifests/BD_Nakht_a.json"
+                "@id": "https://msrtx.github.io/BD_Nakht_a/manifests/BD_Nakht_a3.json"
               },
               "@type": "oa:SpecificResource",
               "selector": {
@@ -375,7 +375,7 @@
             {
               "within": {
                 "@type": "sc:Manifest",
-                "@id": "https://msrtx.github.io/BD_Nakht_a/manifests/BD_Nakht_a.json"
+                "@id": "https://msrtx.github.io/BD_Nakht_a/manifests/BD_Nakht_a3.json"
               },
               "@type": "oa:SpecificResource",
               "selector": {
